@@ -19,7 +19,7 @@ body {
 .header-wrapper {
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(-45deg, #050404, #2E1C2B, #4A1942, #893168);
+    background: linear-gradient(-45deg, #24011e, #382034, #5a1f50, #893168);
     background-size: 400% 400%;
     display: flex;
     flex-direction: column;
@@ -208,7 +208,8 @@ a:hover {
 
 .title {
     color: #050404;
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: 900;
     margin: 0px;
 }
 
@@ -309,9 +310,10 @@ a {
 /* CARDS PROJECTS*/
 
 .title2 {
-    color: white;
-    font-size: 50px;
-    margin: 50px;
+    color: #dbcece;
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: 50px;
     margin-bottom: 0;
     padding-bottom: 0%;
 }
@@ -324,7 +326,8 @@ a {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    background-color: #050404;
+    background-color: #2b2626;
+    background-image: url('./imgs/background-gray.jpg');
 }
 
 .wrapper {
@@ -334,7 +337,8 @@ a {
     flex-direction: initial;
     justify-content: space-between;
     align-items: center;
-    margin: 3rem 0;
+    margin: 0;
+    margin-bottom: 50px;
 }
 
 .card-container2 {
@@ -346,21 +350,60 @@ a {
 }
 
 .card2 {
-    height: 450px;
-    width: 500px;
+    height: 350px;
+    width: 400px;
     margin: 3rem 0 0;
-    background-image: url('./imgs/github.jpg');
+    background-image: url('./imgs/JS-fun.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: grayscale(0.5);
-    color: #ffffff;
+    color: #dbcece;
+    filter: grayscale(0.3);
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.card3 {
+    height: 350px;
+    width: 400px;
+    margin: 3rem 0 0;
+    background-image: url('./imgs/Python-fun.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dbcece;
+    filter: grayscale(0.3);
     cursor: pointer;
     transition: 0.3s;
 }
+
+.card4 {
+    height: 350px;
+    width: 400px;
+    margin-top: 0;
+    padding-top: 0;
+    margin: 3rem 0 0;
+    background-image: url('./imgs/Java-fun.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #dbcece;
+    filter: grayscale(0.3);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 
 .card-wrapper-1 {
     text-align: center;
@@ -449,6 +492,90 @@ a {
     font-size: 18px;
     opacity: 1;
     visibility: visible;
+}
+
+.card3:hover>.card-wrapper-2>.line2 {
+    opacity: 1;
+    animation: spin 1s linear infinite;
+}
+
+.card3:hover>.card-wrapper-2::before {
+    width: 350px;
+    height: 250px;
+    opacity: 0.5;
+}
+
+.card3:hover>.card-wrapper-2 p {
+    font-size: 18px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card3 .card-wrapper-2 a {
+    margin: 10px 0;
+    color: white;
+    border: transparent;
+    background: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.card4:hover>.card-wrapper-1>.line {
+    opacity: 1;
+    animation: spin 1s linear infinite;
+}
+
+.card4:hover>.card-wrapper-1::before {
+    width: 350px;
+    height: 250px;
+    opacity: 0.5;
+}
+
+.card4:hover>.card-wrapper-1 p {
+    font-size: 18px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card4 .card-wrapper-1 a {
+    margin: 10px 0;
+    color: white;
+    border: transparent;
+    background: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.card4:hover>.card-wrapper-2>.line2 {
+    opacity: 1;
+    animation: spin 1s linear infinite;
+}
+
+.card4:hover>.card-wrapper-2::before {
+    width: 350px;
+    height: 250px;
+    opacity: 0.5;
+}
+
+.card4:hover>.card-wrapper-2 p {
+    font-size: 18px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card4 .card-wrapper-2 a {
+    margin: 10px 0;
+    color: white;
+    border: transparent;
+    background: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 40px;
 }
 
 
@@ -673,6 +800,16 @@ a {
         width: 250px;
     }
 
+    .card3 {
+        height: 250px;
+        width: 250px;
+    }
+
+    .card4 {
+        height: 250px;
+        width: 250px;
+    }
+
     .card-wrapper-1 {
         margin-top: 2rem;
         text-align: center;
@@ -681,11 +818,29 @@ a {
     .card-wrapper-1::before {
         height: 200px;
         width: 200px;
-        bottom: -20px;
+        bottom: -37px;
     }
 
     .card2:hover>.card-wrapper-1::before {
-        width: 200px;
+        width: 260px;
+        height: 200px;
+        bottom: 8px;
+    }
+
+    .card3:hover>.card-wrapper-2::before {
+        width: 260px;
+        height: 200px;
+        bottom: 8px;
+    }
+
+    .card4:hover>.card-wrapper-1::before {
+        width: 260px;
+        height: 200px;
+        bottom: 8px;
+    }
+
+    .card4:hover>.card-wrapper-2::before {
+        width: 260px;
         height: 200px;
         bottom: 8px;
     }
@@ -731,7 +886,7 @@ a {
     .card-wrapper-2::before {
         height: 200px;
         width: 200px;
-        bottom: -20px;
+        bottom: -37px;
     }
 
     .card2:hover>.card-wrapper-2::before {
